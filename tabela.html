@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftByke - Tabela de Catálogo</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="pg-tabela" data-pagina="tabela">
+
+    <header class="cabecalho">
+        <a href="index.html" class="logo">Soft<span>Byke</span></a>
+        <nav class="menu-principal" id="menuPrincipal">
+            <ul>
+                <li><a href="index.html" data-pagina="inicio">Início</a></li>
+                <li><a href="empresa.html" data-pagina="empresa">Empresa</a></li>
+                <li><a href="galeria.html" data-pagina="galeria">Galeria</a></li>
+                <li><a href="textos.html" data-pagina="textos">Textos</a></li>
+                <li><a href="listas.html" data-pagina="listas">Listas</a></li>
+                <li><a href="documentos.html" data-pagina="documentos">Documentos</a></li>
+                <li><a href="links.html" data-pagina="links">Links Externos</a></li>
+                <li><a href="tabela.html" data-pagina="tabela">Tabela</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="faixa-titulo">
+        <h1>Tabela de Catálogo</h1>
+        <p>5 colunas por 15 linhas, com mesclagens de colunas (colspan) e de linhas (rowspan).</p>
+    </section>
+
+    <main>
+        <!-- Estrutura: 5 colunas x 15 linhas antes das mesclagens.
+             Colspan (mescla de colunas): linha de título (5) + 4 linhas de subtotal = 5 mesclagens.
+             Rowspan (mescla de linhas): categoria Bicicletas(3), Estoque Bicicletas(2),
+             categoria Peças(3) e categoria Acessórios(2) = 4 mesclagens.
+             Cada célula recebe uma classe de cor (cor1 a cor5) para variar o preenchimento. -->
+        <table class="tabela-catalogo" border="1">
+            <caption><b>Catálogo SoftByke - Bicicletas, Peças, Acessórios e Manutenção</b></caption>
+
+            <tr>
+                <th colspan="5" class="cor-titulo">Catálogo SoftByke 2026</th>
+            </tr>
+            <tr>
+                <th class="cor-cabecalho">Categoria</th>
+                <th class="cor-cabecalho">Produto</th>
+                <th class="cor-cabecalho">Modelo</th>
+                <th class="cor-cabecalho">Preço (R$)</th>
+                <th class="cor-cabecalho">Estoque</th>
+            </tr>
+
+            <tr>
+                <td rowspan="3" class="cor1">Bicicletas</td>
+                <td class="cor2">Bicicleta</td>
+                <td class="cor3">Urban 100</td>
+                <td class="cor4">1.299,00</td>
+                <td rowspan="2" class="cor5">Disponível</td>
+            </tr>
+            <tr>
+                <td class="cor2">Bicicleta</td>
+                <td class="cor3">Trail 200</td>
+                <td class="cor4">2.199,00</td>
+            </tr>
+            <tr>
+                <td class="cor2">Bicicleta</td>
+                <td class="cor3">Speed 300</td>
+                <td class="cor4">3.499,00</td>
+                <td class="cor5">Sob encomenda</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="cor-subtotal">Subtotal Bicicletas</td>
+                <td class="cor-subtotal">6.997,00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3" class="cor3">Peças</td>
+                <td class="cor4">Peça</td>
+                <td class="cor5">Corrente KMC</td>
+                <td class="cor1">89,90</td>
+                <td class="cor2">Disponível</td>
+            </tr>
+            <tr>
+                <td class="cor4">Peça</td>
+                <td class="cor5">Pneu Aro 29</td>
+                <td class="cor1">149,90</td>
+                <td class="cor2">Disponível</td>
+            </tr>
+            <tr>
+                <td class="cor4">Peça</td>
+                <td class="cor5">Câmbio Traseiro</td>
+                <td class="cor1">229,90</td>
+                <td class="cor2">Sob encomenda</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="cor-subtotal">Subtotal Peças</td>
+                <td class="cor-subtotal">469,70</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="cor5">Acessórios</td>
+                <td class="cor1">Acessório</td>
+                <td class="cor2">Capacete Pro</td>
+                <td class="cor3">179,90</td>
+                <td class="cor4">Disponível</td>
+            </tr>
+            <tr>
+                <td class="cor1">Acessório</td>
+                <td class="cor2">Luz Dianteira</td>
+                <td class="cor3">59,90</td>
+                <td class="cor4">Disponível</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="cor-subtotal">Subtotal Acessórios</td>
+                <td class="cor-subtotal">239,80</td>
+            </tr>
+
+            <tr>
+                <td class="cor2">Manutenção</td>
+                <td class="cor3">Serviço</td>
+                <td class="cor4">Revisão Completa</td>
+                <td class="cor5">149,90</td>
+                <td class="cor1">Disponível</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="cor-subtotal">Subtotal Manutenção</td>
+                <td class="cor-subtotal">149,90</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p><strong>SoftByke</strong> - Tabela</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

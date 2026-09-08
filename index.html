@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SoftByke - Bicicletas, Peças e Oficina</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="pg-inicio" data-pagina="inicio">
+
+    <header class="cabecalho">
+        <a href="index.html" class="logo">Soft<span>Byke</span></a>
+        <nav class="menu-principal" id="menuPrincipal">
+            <ul>
+                <li><a href="index.html" data-pagina="inicio">Início</a></li>
+                <li><a href="empresa.html" data-pagina="empresa">Empresa</a></li>
+                <li><a href="galeria.html" data-pagina="galeria">Galeria</a></li>
+                <li><a href="textos.html" data-pagina="textos">Textos</a></li>
+                <li><a href="listas.html" data-pagina="listas">Listas</a></li>
+                <li><a href="documentos.html" data-pagina="documentos">Documentos</a></li>
+                <li><a href="links.html" data-pagina="links">Links Externos</a></li>
+                <li><a href="tabela.html" data-pagina="tabela">Tabela</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="faixa-titulo">
+        <h1>Sua bicicleta, nosso ofício.</h1>
+        <p id="saudacao">Venda de bicicletas, peças, acessórios e oficina completa de reparo e revisão, há 5 anos com você.</p>
+        <a href="empresa.html" class="botao">Conheça a SoftByke</a>
+        <blockquote align="center">
+            "Uma bicicleta bem cuidada dura décadas. O segredo está na manutenção simples e constante." - Equipe SoftByke
+        </blockquote>
+    </section>
+
+    <main>
+        <h2><i>O que você encontra aqui</i></h2>
+        <div class="cartoes">
+            <div class="cartao">
+                <h3><mark>Bicicletas</mark></h3>
+                <p>Modelos urbanos, speed e mountain bike para todos os níveis de pedalada.</p>
+            </div>
+            <div class="cartao">
+                <h3><mark>Peças e acessórios</mark></h3>
+                <p>Componentes, capacetes, luzes e itens de manutenção com procedência garantida.</p>
+            </div>
+            <div class="cartao">
+                <h3><mark>Oficina</mark></h3>
+                <p>Revisão e reparo completos, feitos por mecânicos que entendem de bike.</p>
+            </div>
+            <div class="cartao">
+                <h3><mark>Duas unidades</mark></h3>
+                <p>Loja matriz e uma filial para atender melhor a comunidade ciclista.</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <h2><i>Receba novidades</i></h2>
+        <form class="form-newsletter" onsubmit="return validarNewsletter()">
+            <label for="emailNewsletter">Cadastre seu e-mail:</label>
+            <input type="email" id="emailNewsletter" name="emailNewsletter" placeholder="seuemail@exemplo.com" required>
+            <input type="submit" value="Quero receber" class="botao">
+        </form>
+    </main>
+
+    <section class="patrocinadores">
+        <h2>Nossos patrocinadores</h2>
+        <div class="grade-patrocinadores">
+            <img class="faixa-patrocinador" src="images/patrocinadores/patrocinador_dcd.jpeg" alt="Logo do patrocinador 1">
+            <img class="faixa-patrocinador" src="images/patrocinadores/patrocinador_brawl.png" alt="Logo do patrocinador 2">
+            <img class="faixa-patrocinador" src="https://placehold.co/180x90?text=Patrocinador+3" alt="Logo do patrocinador 3">
+            <img class="faixa-patrocinador" src="https://placehold.co/180x90?text=Patrocinador+4" alt="Logo do patrocinador 4">
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>SoftByke</strong> - Loja de bicicletas, peças e oficina</p>
+        <p>Ciência da Computação - Disciplina: Desenvolvimento Web <sup>Turma: A</sup></p>
+        <p>Davi de Sousa Costa &bull; Igor Christofidis de Lima &bull; Pedro Carolino Barreto Sarmento &bull; Vinicius Bernardes Carneiro</p>
+        <p>&copy; SoftByke <sub>Todos os direitos reservados</sub></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

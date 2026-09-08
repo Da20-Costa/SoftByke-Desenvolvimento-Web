@@ -1,0 +1,334 @@
+/* =====================================================
+   SOFTBYKE - FOLHA DE ESTILO (CSS EXTERNO/LINKADO)
+   Cores da loja: cinza escuro e vermelho.
+   Fontes: só fontes que já vem no computador
+   ===================================================== */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #23262b;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Verdana, Geneva, sans-serif;
+  color: #1c1f26;
+}
+
+a {
+  color: #2e4057;
+}
+a:hover {
+  color: #f26419;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ---------- Cabeçalho / Menu (igual em todas as páginas) ---------- */
+
+.cabecalho {
+  background-color: #1c1f26;
+  color: #ffffff;
+  padding: 15px;
+  border-bottom: 4px solid #f26419;
+}
+.cabecalho:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.logo {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 26px;
+  color: #ffffff;
+  text-decoration: none;
+  float: left;
+}
+.logo span {
+  color: #f26419;
+}
+
+nav.menu-principal {
+  float: right;
+}
+
+nav.menu-principal ul {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+}
+
+nav.menu-principal li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+nav.menu-principal a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #1c1f26;
+}
+nav.menu-principal a:hover,
+nav.menu-principal a.ativo {
+  border-bottom: 2px solid #f26419;
+  color: #f26419;
+}
+
+/* ---------- Rodapé ---------- */
+
+footer {
+  background-color: #1c1f26;
+  color: #eceef1;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+footer strong {
+  color: #f26419;
+}
+
+/* ---------- Estrutura geral da página ---------- */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 15px 30px 15px;
+}
+
+.faixa-titulo {
+  padding: 40px 15px;
+  color: #ffffff;
+  background-color: #1c1f26;
+}
+.faixa-titulo h1 {
+  color: #ffffff;
+}
+.faixa-titulo p {
+  color: #eceef1;
+}
+mark {
+  background-color: #f68c53;
+}
+
+/* Cada página com uma cor de fundo diferente */
+body.pg-inicio      { background-color: #eceef1; }
+body.pg-empresa     { background-color: #f3f6f9; }
+body.pg-galeria     { background-color: #f7f5f2; }
+body.pg-textos      { background-color: #fbfaf7; }
+body.pg-listas      { background-color: #f2f7f4; }
+body.pg-documentos  { background-color: #f5f3fa; }
+body.pg-links       { background-color: #eef5f7; }
+body.pg-tabela      { background-color: #f6f6f6; }
+
+/* ---------- Home: cards e patrocinadores ---------- */
+
+.patrocinadores {
+  background-color: #ffffff;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.grade-patrocinadores img {
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  margin: 8px;
+}
+
+.cartoes:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cartao {
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-left: 5px solid #f26419;
+  padding: 0 15px 35px;
+  margin: 0 1.5% 15px 0;
+  float: left;
+  width: 19.9%;
+  height: 190px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #f26419;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-family: Verdana, Geneva, sans-serif;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.botao:hover {
+  background-color: #770800;
+  color: #ffffff;
+}
+
+#saudacao {
+  color: #e65a50;
+}
+
+/* ---------- Galeria (25+ fotos, 3 colunas, mesmo tamanho) ---------- */
+
+.grade-galeria:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.grade-galeria figure {
+  margin: 0 1.5% 15px 0;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  float: left;
+  width: 30.3%;
+}
+.grade-galeria img {
+  width: 100%;
+  height: 180px;
+}
+.grade-galeria figcaption {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 5px;
+  color: #555555;
+}
+
+/* ---------- Textos com âncoras ---------- */
+
+.indice-ancoras {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+}
+.secao-texto {
+  border-top: 1px dashed #cccccc;
+  padding: 20px 0;
+}
+.voltar-topo {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* ---------- Listas ---------- */
+
+.bloco-lista {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 15px;
+  margin-bottom: 18px;
+}
+
+.bloco-empresa {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 18px;
+}
+
+/* ---------- Documentos / Wireframes ---------- */
+
+.grade-wireframes:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wireframe-item {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  text-align: center;
+  float: left;
+  width: 29%;
+  margin: 0 1.5% 15px 0;
+  height: 310px;
+  position: relative;
+}
+.wireframe-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+}
+.wireframe-item p {
+  position: absolute; 
+  bottom: 15px;       
+  left: 0;           
+  width: 100%;        
+  margin: 0;
+}
+
+/* ---------- Tabela (5 colunas x 15 linhas com mesclagens) ---------- */
+
+table.tabela-catalogo {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+table.tabela-catalogo caption {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+table.tabela-catalogo th,
+table.tabela-catalogo td {
+  border: 1px solid #999999;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+/* Cores diferentes para as células da tabela */
+.cor1 { background-color: #fde3d1; }
+.cor2 { background-color: #d7e8f7; }
+.cor3 { background-color: #e0f2e2; }
+.cor4 { background-color: #f7e6f5; }
+.cor5 { background-color: #fff6cc; }
+.cor-titulo { background-color: #1c1f26; color: #ffffff; }
+.cor-cabecalho { background-color: #2e4057; color: #ffffff; }
+.cor-subtotal { background-color: #dcdcdc; font-weight: bold; }
+
+/* ---------- Links externos ---------- */
+
+.lista-links {
+  list-style: none;
+  padding: 0;
+}
+.lista-links:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.lista-links li {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-left: 4px solid #2e4057;
+  padding: 12px 10px;
+  margin: 0 1.5% 15px 0;
+  float: left;
+  width: 45%;
+  height: 50px;
+}
+
+/* ---------- Formulário de newsletter (home) ---------- */
+
+.form-newsletter {
+  text-align: center;
+  margin-top: 15px;
+}
+.form-newsletter input[type="email"] {
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+  width: 240px;
+}
