@@ -180,7 +180,7 @@ body.pg-tabela      { background-color: #f6f6f6; }
 
 /* ---------- Galeria (25+ fotos, 3 colunas, mesmo tamanho) ---------- */
 
-.grade-galeria:after {
+/* .grade-galeria:after {
   content: "";
   display: block;
   clear: both;
@@ -202,6 +202,46 @@ body.pg-tabela      { background-color: #f6f6f6; }
   font-size: 13px;
   padding-top: 5px;
   color: #555555;
+} */
+.grade-galeria:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grade-galeria figure {
+  margin: 0 1.5% 15px 0;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 5px;
+  float: left;
+  width: 30.3%;
+ 
+  box-sizing: border-box; 
+}
+
+
+.grade-galeria figure:nth-child(3n) {
+  margin-right: 0;
+}
+
+.grade-galeria img {
+  width: 100%;
+  height: 180px;      
+  object-fit: cover;  
+  display: block;    
+}
+
+.grade-galeria figcaption {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 5px;
+  color: #555555;
+  
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ---------- Textos com âncoras ---------- */
