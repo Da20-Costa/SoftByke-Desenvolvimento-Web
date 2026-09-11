@@ -132,14 +132,15 @@ body.pg-tabela      { background-color: #f6f6f6; }
 
 .patrocinadores {
   background-color: #ffffff;
-  padding: 20px 15px;
-  text-align: center;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .grade-patrocinadores img {
-  border: 1px solid #dddddd;
-  background-color: #ffffff;
-  margin: 8px;
+  width: 24%;
+  height: 280px;
+  object-fit: contain;
 }
 
 .cartoes:after {
@@ -219,7 +220,6 @@ body.pg-tabela      { background-color: #f6f6f6; }
  
   box-sizing: border-box; 
 }
-
 
 .grade-galeria figure:nth-child(3n) {
   margin-right: 0;
