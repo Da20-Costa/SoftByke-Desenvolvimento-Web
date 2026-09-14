@@ -27,7 +27,7 @@ function validarNewsletter() {
   }
 
   window.alert("Obrigado! O e-mail " + email + " foi cadastrado com sucesso.");
-  return false; /* impede o envio real, pois é apenas um protótipo */
+  return false;
 }
 
 /* Executa ao carregar qualquer página */

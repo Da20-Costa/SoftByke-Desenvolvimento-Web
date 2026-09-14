@@ -8,7 +8,6 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #23262b;
-  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5 {
@@ -35,6 +34,8 @@ img {
   padding: 15px;
   border-bottom: 4px solid #f26419;
 }
+
+/* Clearfix */
 .cabecalho:after {
   content: "";
   display: block;
@@ -57,9 +58,7 @@ nav.menu-principal {
 }
 
 nav.menu-principal ul {
-  list-style: none;
   margin: 8px 0 0 0;
-  padding: 0;
 }
 
 nav.menu-principal li {
@@ -73,10 +72,8 @@ nav.menu-principal a {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 15px;
   padding-bottom: 3px;
-  border-bottom: 2px solid #1c1f26;
 }
-nav.menu-principal a:hover,
-nav.menu-principal a.ativo {
+nav.menu-principal a:hover {
   border-bottom: 2px solid #f26419;
   color: #f26419;
 }
@@ -140,7 +137,7 @@ body.pg-tabela      { background-color: #f6f6f6; }
 .grade-patrocinadores img {
   width: 24%;
   height: 280px;
-  object-fit: contain;
+  object-fit: contain; /*Serve para controlar o redimensionamento e adaptação dentro do espaço (largura e altura) definido */
 }
 
 .cartoes:after {
@@ -179,6 +176,18 @@ body.pg-tabela      { background-color: #f6f6f6; }
   color: #e65a50;
 }
 
+/* ---------- Formulário de newsletter (home) ---------- */
+
+.form-newsletter {
+  text-align: center;
+  margin-top: 15px;
+}
+.form-newsletter input[type="email"] {
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+  width: 240px;
+}
+
 /* ---------- Galeria (25+ fotos, 3 colunas, mesmo tamanho) ---------- */
 
 .grade-galeria:after {
@@ -197,6 +206,7 @@ body.pg-tabela      { background-color: #f6f6f6; }
 .grade-galeria img {
   width: 100%;
   height: 180px;
+  object-fit: contain;
 }
 .grade-galeria figcaption {
   text-align: center;
@@ -274,7 +284,7 @@ body.pg-tabela      { background-color: #f6f6f6; }
 /* ---------- Tabela (5 colunas x 15 linhas com mesclagens) ---------- */
 
 table.tabela-catalogo {
-  border-collapse: collapse;
+  border-collapse: collapse; /* unifica as bordas das células*/
   width: 100%;
   font-size: 15px;
 }
@@ -320,16 +330,4 @@ table.tabela-catalogo td {
   float: left;
   width: 45%;
   height: 50px;
-}
-
-/* ---------- Formulário de newsletter (home) ---------- */
-
-.form-newsletter {
-  text-align: center;
-  margin-top: 15px;
-}
-.form-newsletter input[type="email"] {
-  padding: 8px 10px;
-  border: 1px solid #cccccc;
-  width: 240px;
 }
