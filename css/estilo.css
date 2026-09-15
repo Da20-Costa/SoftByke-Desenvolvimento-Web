@@ -266,7 +266,6 @@ body.pg-tabela      { background-color: #f6f6f6; }
   width: 29%;
   margin: 0 1.5% 15px 0;
   height: 310px;
-  position: relative;
 }
 .wireframe-item img {
   width: 100%;
@@ -274,7 +273,6 @@ body.pg-tabela      { background-color: #f6f6f6; }
   object-fit: contain;
 }
 .wireframe-item p {
-  position: absolute; 
   bottom: 15px;       
   left: 0;           
   width: 100%;        
